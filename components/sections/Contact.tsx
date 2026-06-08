@@ -62,7 +62,6 @@ export default function Contact() {
     if (currentStep < totalSteps) {
       setCurrentStep(currentStep + 1);
     } else {
-      console.log("Form submitted:", formData);
       setSubmitted(true);
     }
   };

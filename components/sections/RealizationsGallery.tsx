@@ -72,9 +72,7 @@ export default function RealizationsGallery() {
 
       <HorizontalImageStack
         images={projects}
-        onImageChange={(index) => {
-          console.log("Project changed to:", index)
-        }}
+        onImageChange={() => {}}
       />
     </section>
   );

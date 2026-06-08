@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Playpen+Sans+Arabic:wght@100..800&display=swap');
 @import "tailwindcss";
-@import "tw-animate-css";
 
 :root {
   --background: oklch(1 0 0);
@@ -91,6 +89,7 @@
   --color-volto-accent: #FFD54F;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-lalezar: var(--font-lalezar);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

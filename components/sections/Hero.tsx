@@ -121,7 +121,7 @@ export default function Hero() {
           </motion.div>
           <motion.h1 
             className="text-center text-6xl text-white drop-shadow-lg md:text-7xl lg:text-[6rem] tracking-tight leading-tight"
-            style={{ fontFamily: "'Lalezar', sans-serif", fontWeight: 400 }}
+            style={{ fontFamily: "var(--font-lalezar), sans-serif", fontWeight: 400 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
