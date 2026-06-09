@@ -274,6 +274,7 @@ function ServicePageClient({ slug }: { slug: string }) {
             src={service.imgSrc}
             alt={service.title}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1152px"
             className="object-cover"
             priority
           />
@@ -347,6 +348,7 @@ function ServicePageClient({ slug }: { slug: string }) {
                       src={section.imgSrc}
                       alt={section.imgAlt || section.heading}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 480px"
                       className="object-cover transition-transform duration-700 hover:scale-105"
                     />
                   </div>

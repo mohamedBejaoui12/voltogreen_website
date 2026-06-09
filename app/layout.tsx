@@ -65,6 +65,7 @@ export default function RootLayout({
     <html
       lang="fr"
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${lalezar.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">

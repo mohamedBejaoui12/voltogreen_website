@@ -4,7 +4,7 @@ import React from 'react';
 import { Zap, MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Sheet, SheetContent, SheetFooter } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetFooter, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -101,6 +101,8 @@ export function FloatingHeader() {
 							showClose={true}
 							side="left"
 						>
+							<SheetTitle className="sr-only">Menu de navigation</SheetTitle>
+							<SheetDescription className="sr-only">Navigation principale du site Voltogreen</SheetDescription>
 							<div className="grid gap-y-2 overflow-y-auto px-4 pt-12 pb-5">
 								{links.map((link) => (
 									<Link
