@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Netlify Forms – Voltogreen</title>
+  </head>
+  <body>
+    <!--
+      This file exists solely so that Netlify's build bot can detect
+      the "contact" form at build time.
+      It is never served to users.
+      Required by @netlify/plugin-nextjs@5 — see:
+      https://ntl.fyi/next-runtime-forms-migration
+    -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="nom" />
+      <input type="text" name="prenom" />
+      <input type="text" name="telephone" />
+      <input type="text" name="adresse" />
+      <input type="text" name="typeInstallation" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>
