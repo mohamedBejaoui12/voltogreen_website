@@ -1,7 +1,7 @@
 "use client";
 
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
-import { Award, ShieldCheck, Clock, Headphones, Leaf, Sparkles, Plus, Home, Zap, Users, Calendar } from "lucide-react";
+import { Award, ShieldCheck, Clock, Headphones, Leaf, Sparkles, Plus, Home, Zap, Users, Calendar, Wrench } from "lucide-react";
 import { useEffect, useState } from "react";
 
 function AnimatedCounter({ value, isVisible }: { value: string; isVisible: boolean }) {
@@ -43,41 +43,41 @@ export default function WhyChooseUs() {
   const reasons = [
     {
       icon: Award,
-      title: "Expertise Reconnue",
-      description: "Forts de 5 ans d’expérience, nous concevons et installons des solutions solaires fiables, performantes et adaptées à vos besoins.",
+      title: "Équipe Certifiée",
+      description: "Une installation professionnelle réalisée par des experts certifiés et expérimentés.",
     },
     {
       icon: ShieldCheck,
-      title: "Qualité Premium",
-      description: "Nous n'utilisons que des équipements certifiés Tier 1, garantissant performance et durabilité.",
+      title: "Garanties Étendues",
+      description: "Tranquillité d'esprit avec 25 ans de garantie sur les panneaux et 10 ans sur les onduleurs.",
     },
     {
       icon: Clock,
-      title: "Garantie Étendue",
-      description: "Tranquillité d'esprit absolue avec une garantie de rendement sur 10 ans sur vos panneaux.",
+      title: "Intervention Rapide",
+      description: "Des délais d'installation optimisés et des équipes prêtes à intervenir en cas de besoin.",
     },
     {
       icon: Headphones,
-      title: "Support Dédié",
-      description: "Une équipe locale réactive et un service client disponible 7j/7 pour vous accompagner.",
+      title: "Support Client 24/7",
+      description: "Une équipe réactive à votre écoute à tout moment pour un suivi à long terme.",
     },
     {
-      icon: Leaf,
-      title: "Engagement Écologique",
-      description: "Chaque projet est conçu pour maximiser votre impact positif sur l'environnement.",
+      icon: Wrench,
+      title: "Maintenance Gratuite",
+      description: "Profitez d'une inspection technique et d'une maintenance gratuites pendant la première année.",
     },
     {
       icon: Sparkles,
-      title: "Solutions Innovantes",
-      description: "Des installations intelligentes avec monitoring en temps réel sur votre smartphone.",
+      title: "Solutions Sur-Mesure",
+      description: "Des systèmes adaptés à chaque besoin, que ce soit pour votre domicile ou votre entreprise.",
     },
   ];
 
   const stats = [
-    { label: "Projets Résidentiels", value: "80", icon: Home },
-    { label: "MWh Produits/an", value: "3", icon: Zap },
+    { label: "Projets Réalisés", value: "150", icon: Home },
+    { label: "kW/an Installés", value: "750", icon: Zap },
     { label: "Clients Satisfaits", value: "98", suffix: "%", icon: Users },
-    { label: "Années d'Expérience", value: "5", icon: Calendar },
+    { label: "Ans d'Expérience", value: "3", icon: Calendar },
   ];
 
   return (

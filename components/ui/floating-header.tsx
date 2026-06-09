@@ -71,6 +71,22 @@ export function FloatingHeader() {
 
 				{/* Right Section */}
 				<div className="flex items-center gap-2">
+					<a
+						href="tel:+21655062167"
+						className="hidden xl:flex items-center gap-1.5 text-sm font-bold text-volto-primary hover:text-volto-secondary transition-colors bg-volto-primary/10 px-4 py-1.5 rounded-full"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+						+216 55 062 167
+					</a>
+					<Link
+						href="/#contact"
+						className={cn(
+							buttonVariants({ variant: 'default', size: 'sm' }),
+							'hidden lg:flex rounded-full bg-volto-primary text-white hover:bg-volto-secondary font-semibold'
+						)}
+					>
+						Devis Gratuit
+					</Link>
 					<Sheet open={open} onOpenChange={setOpen}>
 						<Button
 							size="icon"
@@ -98,6 +114,15 @@ export function FloatingHeader() {
 									</Link>
 								))}
 							</div>
+							<SheetFooter className="px-4 pb-6 border-t border-gray-100 pt-4">
+								<a href="tel:+21655062167" className="flex items-center justify-center gap-2 w-full rounded-full bg-volto-primary/10 py-3 text-sm font-bold text-volto-primary">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+									+216 55 062 167
+								</a>
+								<Link href="/#contact" onClick={() => setOpen(false)} className="flex items-center justify-center w-full rounded-full bg-volto-primary py-3 text-sm font-bold text-white mt-2">
+									Demander un Devis Gratuit
+								</Link>
+							</SheetFooter>
 						</SheetContent>
 					</Sheet>
 				</div>

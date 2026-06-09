@@ -62,7 +62,22 @@ export default function Contact() {
     if (currentStep < totalSteps) {
       setCurrentStep(currentStep + 1);
     } else {
-      setSubmitted(true);
+      const encode = (data: Record<string, string>) => {
+        return Object.keys(data)
+          .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+          .join("&");
+      };
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...formData }),
+      })
+        .then(() => setSubmitted(true))
+        .catch((error) => {
+          console.error(error);
+          setErrorMsg("Une erreur est survenue lors de l'envoi.");
+        });
     }
   };
 
@@ -426,7 +441,7 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold text-gray-900">Localisation</p>
                     <a href="https://maps.app.goo.gl/576NNUEn468DFT328" target="_blank" rel="noreferrer" className="text-gray-600 hover:text-volto-primary transition">
-                      El Mnihla, Ettadhamen Mnihla, Tunisia, 1001
+                      Cité Gouabsia, Jardin d'El Menzah 2, Mnihla, 2094, Tunisia
                     </a>
                   </div>
                 </div>

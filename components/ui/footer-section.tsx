@@ -111,7 +111,7 @@ function Footerdemo() {
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-volto-primary flex-shrink-0 mt-1" />
                 <a href="https://maps.app.goo.gl/576NNUEn468DFT328" target="_blank" rel="noreferrer" className="hover:text-volto-primary transition leading-relaxed">
-                  El Mnihla, Ettadhamen Mnihla, <br/> Tunisia, 1001
+                  Cité Gouabsia, Jardin d'El Menzah 2, <br/> Mnihla, 2094, Tunisia
                 </a>
               </div>
               <p className="flex items-center gap-2">

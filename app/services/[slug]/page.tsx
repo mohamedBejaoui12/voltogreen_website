@@ -37,8 +37,8 @@ const servicesData: Record<string, ServiceData> = {
     badge: "⚡ Notre service phare",
     stats: [
       { label: "Projets livrés", value: "150+" },
-      { label: "Rendement garanti", value: "25 ans" },
-      { label: "Économies en moyenne", value: "80%" },
+      { label: "Garantie panneaux", value: "25 ans" },
+      { label: "Capacité installée", value: "750 kW" },
     ],
     content: [
       {
@@ -132,7 +132,7 @@ const servicesData: Record<string, ServiceData> = {
     imgSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&h=900&fit=crop",
     badge: "📋 Service clé en main",
     stats: [
-      { label: "Dossiers traités", value: "200+" },
+      { label: "Dossiers traités", value: "150+" },
       { label: "Taux de succès", value: "100%" },
       { label: "Délai moyen", value: "4 sem." },
     ],
