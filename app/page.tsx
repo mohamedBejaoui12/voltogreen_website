@@ -19,15 +19,14 @@ export default function Home() {
       <FloatingHeader />
       <Hero />
       <IndependanceEnergetique />
+      <WhyChooseUs /> 
       <Storytelling />
+       <Services />
       <TunisiaPotential />
-      <Services />
-      <SolarCalculator />
-      <Pricing />
       <RealizationsGallery />
       <Testimonials />
       <SustainabilityImpact />
-      <WhyChooseUs />
+      <Pricing />
       <Contact />
       <Footer />
     </main>

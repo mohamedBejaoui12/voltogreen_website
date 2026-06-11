@@ -163,39 +163,6 @@ export default function Hero() {
             <span className="relative z-10">Calculer mes économies</span>
           </Link>
         </motion.div>
-
-        {/* Trust Bar */}
-        <motion.div 
-          className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4 text-sm font-semibold text-white/95 drop-shadow-md mt-2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-        >
-          <div className="flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 backdrop-blur-md border border-white/10">
-            <CheckCircle2 className="h-4 w-4 text-[#14C3B3]" />
-            <span>150+ Projets Réalisés</span>
-          </div>
-          <div className="flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 backdrop-blur-md border border-white/10">
-            <CheckCircle2 className="h-4 w-4 text-[#14C3B3]" />
-            <span>750 kW/an Installés</span>
-          </div>
-          <div className="flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 backdrop-blur-md border border-white/10">
-            <CheckCircle2 className="h-4 w-4 text-[#14C3B3]" />
-            <span>3 Ans d'Expérience</span>
-          </div>
-        </motion.div>
-
-        {/* Financing Highlight */}
-        <motion.div 
-          className="mt-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
-        >
-          <span className="inline-block rounded-full bg-volto-primary/20 px-6 py-2 text-sm font-bold text-[#FFD54F] border border-[#FFD54F]/30 backdrop-blur-md shadow-lg">
-            💰 Financement disponible jusqu'à 7 ans pour le résidentiel
-          </span>
-        </motion.div>
       </motion.div>
 
       {/* Smooth Scroll Indicator */}
